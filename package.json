@@ -1,0 +1,31 @@
+{
+  "name": "taller-final-api-turnos",
+  "version": "1.0.0",
+  "description": "API REST para gestión de turnos de taller automotriz con arquitectura por capas en Node.js y Express",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/**/*.test.js",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api-rest",
+    "turnos",
+    "cliente-servidor",
+    "postgresql",
+    "arquitectura-en-capas"
+  ],
+  "author": "Santiago García & Miguel Zambrano",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
