@@ -1,0 +1,26 @@
+meta {
+  name: Error Precio Base Invalido (400 Bad Request)
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3000/api/turnos
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "cliente": "Pedro Infante",
+    "placaVehiculo": "ZZZ-000",
+    "tipoServicio": "Revision General",
+    "fechaHora": "2026-11-27 09:00:00",
+    "precioBase": -25000,
+    "prioritario": false
+  }
+}

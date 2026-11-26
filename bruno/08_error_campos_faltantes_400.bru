@@ -1,0 +1,24 @@
+meta {
+  name: Error Campos Faltantes (400 Bad Request)
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:3000/api/turnos
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "tipoServicio": "Revision General",
+    "fechaHora": "2026-11-27 09:00:00",
+    "precioBase": 50000,
+    "prioritario": false
+  }
+}

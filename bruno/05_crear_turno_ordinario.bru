@@ -1,0 +1,26 @@
+meta {
+  name: Crear Turno Ordinario (201 Created)
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/api/turnos
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "cliente": "Andres Felipe Castro",
+    "placaVehiculo": "KLR-456",
+    "tipoServicio": "Cambio de Pastillas de Freno",
+    "fechaHora": "2026-11-26 14:00:00",
+    "precioBase": 200000,
+    "prioritario": false
+  }
+}
